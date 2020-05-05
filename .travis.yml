@@ -1,5 +1,11 @@
 language: java
+install: true
+
+os: linux
+dist: trusty
+jdk: oraclejdk8
+
 before_install:
   - chmod +x gradlew
 script:
-  - gradlew clean test
+  - ./gradlew test --scan s
