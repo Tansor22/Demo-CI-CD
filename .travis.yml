@@ -1,3 +1,9 @@
+# Requirements
+sudo: required
+# Docker service required
+services:
+  - docker
+
 language: java
 
 # Travis env specified
