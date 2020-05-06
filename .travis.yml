@@ -1,10 +1,17 @@
 language: java
 
+# Travis env specified
 os: linux
 dist: trusty
 jdk: oraclejdk8
 
+# Permission to run gradlew script
 before_install:
   - chmod +x gradlew
+
+# Run tests
 script:
   - ./gradlew clean test
+# Deploy on docker hub
+after_success:
+      - sh .travis/deploy_dockerhub.sh
