@@ -17,7 +17,7 @@ before_install:
 
 # Run tests
 script:
-  - ./gradlew clean test
+  - ./gradlew clean build test
 # Deploy on docker hub
 after_success:
   - sh ./deploy_dockerhub.sh
