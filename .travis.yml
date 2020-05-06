@@ -7,9 +7,9 @@ services:
 language: java
 
 # Travis env specified
-#os: linux
-#dist: trusty
-#jdk: oraclejdk8
+os: linux
+dist: trusty
+jdk: oraclejdk8
 
 # Permission to run gradlew script
 before_install:
