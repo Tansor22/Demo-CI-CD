@@ -20,5 +20,5 @@ script:
   - ./gradlew test
 # Deploy on docker hub
 after_success:
-  - ./gradlew build
   - sh ./deploy_dockerhub.sh
+  - sh ./deploy_heroku.sh
