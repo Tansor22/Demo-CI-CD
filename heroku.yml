@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: java -D-Dspring.profiles.active=prod -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/*.jar
