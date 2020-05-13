@@ -12,11 +12,7 @@ sudo apt-get install heroku-toolbelt
 # Run Heroku CLI
 # Once installed, you’ll have access to the heroku command from your command shell.
 # Log in using the email address and password you used when creating your Heroku account.
-heroku login
-git init
-heroku git:remote $HEROKU_NAME
-heroku stack:set container
-git push heroku master
+heroku container:push web
 
 
 echo "🚀  https://$HEROKU_NAME"
